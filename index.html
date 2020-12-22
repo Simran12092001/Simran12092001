@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+		<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="news.html">News</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="contact.html">Contact us</a></li>
+
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn"></a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      
+    </div>
+  </li>
+</ul>
+
+	<h1 style="text-align:center;">WILDLIFE PHOTOGRAPHY</h1>
+	<div class="container">
+		<img src="https://static.pexels.com/photos/52500/horse-herd-fog-nature-52500.jpeg">
+		<img src="https://static.pexels.com/photos/66898/elephant-cub-tsavo-kenya-66898.jpeg">
+		<img src="https://static.pexels.com/photos/213399/pexels-photo-213399.jpeg">
+		<img src="https://static.pexels.com/photos/158471/ibis-bird-red-animals-158471.jpeg">
+		<img src="https://static.pexels.com/photos/133459/pexels-photo-133459.jpeg">
+		<img src="https://static.pexels.com/photos/50988/ape-berber-monkeys-mammal-affchen-50988.jpeg">
+	</div>
+	<footer>THIS WEBSITE CONTAINS WILDLIFE PHOTOGRAPHY</footer>
+
+
+</body>
+</html>
